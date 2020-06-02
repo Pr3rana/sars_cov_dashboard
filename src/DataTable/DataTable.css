@@ -1,0 +1,34 @@
+.dataCard{
+    flex: 14%;
+    max-width: 18%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: aqua;
+    margin: .5rem;
+    padding: 2rem;
+}
+#header{
+    text-align: center !important;
+}
+#mainWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+    .dataCard {
+      flex: 28%;
+      max-width: 36%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .dataCard {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
