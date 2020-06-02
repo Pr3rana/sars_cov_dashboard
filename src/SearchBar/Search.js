@@ -43,18 +43,12 @@ function SearchBar(props){
     return(
           <div className="autocomplete">
             <input type="hidden" value="prayer" />
-            <input id="myInput" type="text" name="myCountry" placeholder="Country"
+            <input id="myInput" type="text" required name="myCountry" placeholder="Country"
                 onChange={(e)=> {
                   setInputData(e.target.value)
                   onSelect(false)
                 }}
-                // onKeyUp={(e) => {
-                //   setInputData(e.target.value)
-                //   onSelect(false)
-                // }}
-                // onKeyDown={onkeydown} 
                 value = {inputData}
-                // value={inputData}
               />
               <button onClick={()=>props.click(inputData)}><i className="fa fa-search"></i></button>
               {
